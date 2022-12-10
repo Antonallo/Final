@@ -48,7 +48,7 @@ void mult (string a, string b)
 		vector1[i + a.size()] += carry;
 	}
 
-	while (vector1[vector1.size() - 1] == 0)
+	while (vector1[vector1.size() - 1] == 0 && vector1.size() != 1)
 		vector1.resize(vector1.size() - 1);
 
 	vector1.shrink_to_fit();
